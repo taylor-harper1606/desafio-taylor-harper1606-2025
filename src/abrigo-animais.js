@@ -13,19 +13,21 @@ class AbrigoAnimais {
       const listaNomes = ["Rex", "Mimi", "Fofo", "Zero", "Bola", "Bebe", "Loco",]
       const listaBrinquedos = ["RATO", "BOLA", "LASER", "CAIXA", "NOVELO", "SKATE"];
 
-      const listaAnimais = [];
-      listaAnimais.push = ["Rex", "cão", "RATO", "BOLA"];
-      listaAnimais.push = ["Mimi", "gato", "BOLA", "LASER"];
-      listaAnimais.push = ["Fofo", "gato", "BOLA", "RATO", "LASER"];
-      listaAnimais.push = ["Zero", "gato", "RATO", "BOLA"];
-      listaAnimais.push = ["Bola", "cão", "CAIXA", "NOVELO"];
-      listaAnimais.push = ["Bebe", "cão", "LASER", "RATO", "BOLA"];
-      listaAnimais.push = ["Loco", "jabuti", "SKATE", "RATO"];
+      const tabelaAnimais = [];
+      tabelaAnimais.push = ["Rex", "cão", "RATO", "BOLA"];
+      tabelaAnimais.push = ["Mimi", "gato", "BOLA", "LASER"];
+      tabelaAnimais.push = ["Fofo", "gato", "BOLA", "RATO", "LASER"];
+      tabelaAnimais.push = ["Zero", "gato", "RATO", "BOLA"];
+      tabelaAnimais.push = ["Bola", "cão", "CAIXA", "NOVELO"];
+      tabelaAnimais.push = ["Bebe", "cão", "LASER", "RATO", "BOLA"];
+      tabelaAnimais.push = ["Loco", "jabuti", "SKATE", "RATO"];
 
       //preparação de input para operações
       var p1 = brinquedosPessoa1.split(',');
       var p2 = brinquedosPessoa2.split(',');
       var animais = ordemAnimais.split(',');
+
+      //ATUALIZAR!! CÓDIGO FEITO PARA SOMENTE 2 ANIMAIS POR VEZ!
 
       //checagem de animais/brinquedos duplicados ou inválidos
         //animais
@@ -70,7 +72,17 @@ class AbrigoAnimais {
         }
       }
       
-      
+      //Adotar animais pessoa 1
+      for (let i = 0; i < animais.length; i++) {
+        const animalAdotando = animais[i];
+        for (let j = 0; j < tabelaAnimais.length; j++) {
+          const animalVerificando = tabelaAnimais[j];
+          if (animalVerificando[1] === animalAdotando ) {
+            
+          }
+        }
+        
+      }
 
   }
 }
