@@ -1,0 +1,16 @@
+# 1 
+Design the code with a single method using ifs and fors, going through each logical step in order. That way we guarantee to have a working code.
+
+- Have the list DONE
+- Validate input DONE
+- End code with error if input invalid DONE
+- Check person1 through animals, removing toys if necessary
+- Check person2
+- If animal conflict, remove animal (tadinho) and go through loop again
+- Export result
+
+# 2
+Optimize the code using properties, such as "hoarder" (for the cats) and "friend" (for Loco).
+
+# 3
+Learn how to use prototypes and try to apply it in the code.
