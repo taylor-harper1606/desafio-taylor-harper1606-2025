@@ -72,13 +72,26 @@ class AbrigoAnimais {
         }
       }
       
-      //Adotar animais pessoa 1
+      //Adotar animais
       for (let i = 0; i < animais.length; i++) {
         const animalAdotando = animais[i];
         for (let j = 0; j < tabelaAnimais.length; j++) {
           const animalVerificando = tabelaAnimais[j];
           if (animalVerificando[1] === animalAdotando ) {
-            
+            for (let k = 2; k < animalVerificando.length; k++) {
+              const brinquedosSatisfazer = animalVerificando.length - 2;
+
+              //pessoa 1
+              for (let l = 0; l < p1.length; l++) {
+                const brinquedo = p1[l];
+                if (k-2 <= l) {
+                  if (brinquedo === animalVerificando[k]) {
+                    brinquedosSatisfazer --;
+                  }
+                }
+              }
+              
+            }
           }
         }
         
